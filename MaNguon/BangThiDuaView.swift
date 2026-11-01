@@ -1027,7 +1027,7 @@ final class BangThiDuaView: UIView, UICollectionViewDataSource, UICollectionView
         let dsXuat = danhSach.map { locVaSapXep($0) } ?? danhSachHienThi
         switch KhoDuLieu.dungChung.caiDat.kieuHienThi {
         case .bangChiTiet:
-            return taoAnhMẫuBang8Cot(
+            return taoAnhMauBang8Cot(
                 ngay: ngay,
                 doanhThu: doanhThu,
                 danhSach: dsXuat,
@@ -1047,7 +1047,7 @@ final class BangThiDuaView: UIView, UICollectionViewDataSource, UICollectionView
         }
     }
 
-    private func taoAnhMẫuBang8Cot(
+    private func taoAnhMauBang8Cot(
         ngay: Date,
         doanhThu: ThongTinDoanhThu,
         danhSach: [DongThiDua],
